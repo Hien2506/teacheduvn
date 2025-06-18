@@ -74,4 +74,15 @@ $(document).ready(function () {
             $('.header-main').removeClass('header-fixed');
         }
     });
+
+    // tab about us 2
+    $('.ielts-tab-btn').click(function () {
+        $('.ielts-tab-btn').removeClass('active');
+        $(this).addClass('active');
+
+        const target = $(this).data('target');
+        $('.ielts-tab-pane').removeClass('active');
+        $(target).addClass('active');
+    });
+
 });
